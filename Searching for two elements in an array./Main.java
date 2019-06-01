@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+  int i,n,j,k,arr[10],index1,index2,set=0,set1=0;
+  scanf("%d",&n);
+ for(i=0;i<n;i++)
+{  
+  scanf("%d",&arr[i]);
+}
+scanf("%d",&j);
+scanf("%d",&k);
+for(i=0;i<10;i++)
+{  
+  if(arr[i]==j)
+  {
+  set=1;
+  index1=i;  
+    break;
+  }
+}
+ for(i=0;i<10;i++)
+ {
+  if(arr[i]==k)
+  {
+    set1=1;
+  index2=i;
+    break;
+  }
+}
+  if(set==1)
+  {
+    printf("%d\n",index1);
+  }
+  else
+  {
+    printf("-1");
+  } 
+   if(set1==1)
+  {
+    printf("%d\n",index2);
+  }
+  else
+  {
+    printf("-1");
+  }  
+    return 0;
+}
